@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DDECAA89-3207-4364-A659-F1CD48DB7144}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>erp</RootNamespace>
+    <AssemblyName>erp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Downloads\Mysql\v4.5\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classCliente.cs" />
+    <Compile Include="classEmpleados.cs" />
+    <Compile Include="classProductoDeFactura.cs" />
+    <Compile Include="classFacturaCompra.cs" />
+    <Compile Include="classFacturaDeVenta.cs" />
+    <Compile Include="classProducto.cs" />
+    <Compile Include="classProductoDeFacturaCompra.cs" />
+    <Compile Include="classProveedor.cs" />
+    <Compile Include="classTablasDeCRM.cs" />
+    <Compile Include="ERPformAdministrarCatalogoDeProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERPformAdministrarCatalogoDeProductos.Designer.cs">
+      <DependentUpon>ERPformAdministrarCatalogoDeProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRMformAnalisisDeClientesFrecuentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRMformAnalisisDeClientesFrecuentes.Designer.cs">
+      <DependentUpon>CRMformAnalisisDeClientesFrecuentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRMformAnalisisGeografico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRMformAnalisisGeografico.Designer.cs">
+      <DependentUpon>CRMformAnalisisGeografico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRMERPformClientesProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRMERPformClientesProveedores.Designer.cs">
+      <DependentUpon>CRMERPformClientesProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formCompraDeProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formCompraDeProductos.Designer.cs">
+      <DependentUpon>formCompraDeProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDatosParaFacturaCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDatosParaFacturaCompra.Designer.cs">
+      <DependentUpon>formDatosParaFacturaCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDatosParaFacturaVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDatosParaFacturaVenta.Designer.cs">
+      <DependentUpon>formDatosParaFacturaVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formFactura.Designer.cs">
+      <DependentUpon>formFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMenuGraficasClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMenuGraficasClientes.Designer.cs">
+      <DependentUpon>formMenuGraficasClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMenuPrincipal.Designer.cs">
+      <DependentUpon>formMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRMformMenuPrincipalCRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRMformMenuPrincipalCRM.Designer.cs">
+      <DependentUpon>CRMformMenuPrincipalCRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRMformProductosMasVendidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRMformProductosMasVendidos.Designer.cs">
+      <DependentUpon>CRMformProductosMasVendidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRMformPromocionesDeMostrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRMformPromocionesDeMostrador.Designer.cs">
+      <DependentUpon>CRMformPromocionesDeMostrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formVentaDeProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formVentaDeProductos.Designer.cs">
+      <DependentUpon>formVentaDeProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMenuPrincipalERP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMenuPrincipalERP.Designer.cs">
+      <DependentUpon>formMenuPrincipalERP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formInformeDeInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formInformeDeInventario.Designer.cs">
+      <DependentUpon>formInformeDeInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formVisualizarFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formVisualizarFacturas.Designer.cs">
+      <DependentUpon>formVisualizarFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grafica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grafica.Designer.cs">
+      <DependentUpon>grafica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ERPformAdministrarCatalogoDeProductos.resx">
+      <DependentUpon>ERPformAdministrarCatalogoDeProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRMformAnalisisDeClientesFrecuentes.resx">
+      <DependentUpon>CRMformAnalisisDeClientesFrecuentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRMformAnalisisGeografico.resx">
+      <DependentUpon>CRMformAnalisisGeografico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRMERPformClientesProveedores.resx">
+      <DependentUpon>CRMERPformClientesProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formCompraDeProductos.resx">
+      <DependentUpon>formCompraDeProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDatosParaFacturaCompra.resx">
+      <DependentUpon>formDatosParaFacturaCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDatosParaFacturaVenta.resx">
+      <DependentUpon>formDatosParaFacturaVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formFactura.resx">
+      <DependentUpon>formFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMenuGraficasClientes.resx">
+      <DependentUpon>formMenuGraficasClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMenuPrincipal.resx">
+      <DependentUpon>formMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRMformMenuPrincipalCRM.resx">
+      <DependentUpon>CRMformMenuPrincipalCRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRMformProductosMasVendidos.resx">
+      <DependentUpon>CRMformProductosMasVendidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRMformPromocionesDeMostrador.resx">
+      <DependentUpon>CRMformPromocionesDeMostrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formVentaDeProductos.resx">
+      <DependentUpon>formVentaDeProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMenuPrincipalERP.resx">
+      <DependentUpon>formMenuPrincipalERP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formInformeDeInventario.resx">
+      <DependentUpon>formInformeDeInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formVisualizarFacturas.resx">
+      <DependentUpon>formVisualizarFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grafica.resx">
+      <DependentUpon>grafica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="reportFactura.rdlc" />
+    <None Include="Properties\DataSources\classFacturaVenta.datasource" />
+    <None Include="Properties\DataSources\classProductoDeFactura.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
