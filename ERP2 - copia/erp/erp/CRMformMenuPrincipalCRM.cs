@@ -47,5 +47,11 @@ namespace erp
             CRMformProductosMasVendidos ventanaProductosMasVendidos = new CRMformProductosMasVendidos();
             ventanaProductosMasVendidos.Show(); 
         }
+
+        private void análisisGráficoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            formAnalisisGrafico ventanaAnalisisGrafico = new formAnalisisGrafico();
+            ventanaAnalisisGrafico.Show(); 
+        }
     }
 }

@@ -65,5 +65,11 @@ namespace erp
             CRMERPformClientesProveedores ventanaAdministrarEmpleados= new CRMERPformClientesProveedores();
             ventanaAdministrarEmpleados.Show(); 
         }
+
+        private void análisisGráficoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            formAnalisisGrafico ventanaAnalisisGrafico = new formAnalisisGrafico();
+            ventanaAnalisisGrafico.Show(); 
+        }
     }
 }

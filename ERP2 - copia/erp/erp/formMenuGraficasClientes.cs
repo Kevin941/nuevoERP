@@ -19,7 +19,7 @@ namespace erp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            grafica ventanaGraficaPorClientes = new grafica();
+            formAnalisisGrafico ventanaGraficaPorClientes = new formAnalisisGrafico();
             ventanaGraficaPorClientes.Show(); 
         }
 

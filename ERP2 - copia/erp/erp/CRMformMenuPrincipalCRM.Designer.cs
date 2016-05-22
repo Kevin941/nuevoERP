@@ -33,12 +33,13 @@
             this.administrarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administrarClientesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.análisisDeClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.clientesFrecuentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.promocionesDeMostradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.análisisGeográficoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.análisisDeProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosMásVendidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.análisisGráficoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +49,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.administrarClientesToolStripMenuItem,
             this.análisisDeClientesToolStripMenuItem,
-            this.análisisDeProductosToolStripMenuItem});
+            this.análisisDeProductosToolStripMenuItem,
+            this.análisisGráficoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(747, 24);
@@ -79,16 +81,6 @@
             this.análisisDeClientesToolStripMenuItem.Name = "análisisDeClientesToolStripMenuItem";
             this.análisisDeClientesToolStripMenuItem.Size = new System.Drawing.Size(120, 20);
             this.análisisDeClientesToolStripMenuItem.Text = "Análisis de Clientes";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(747, 391);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // clientesFrecuentesToolStripMenuItem
             // 
@@ -126,7 +118,24 @@
             this.productosMásVendidosToolStripMenuItem.Text = "Productos más vendidos";
             this.productosMásVendidosToolStripMenuItem.Click += new System.EventHandler(this.productosMásVendidosToolStripMenuItem_Click);
             // 
-            // formMenuPrincipalCRM
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(747, 391);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // análisisGráficoToolStripMenuItem
+            // 
+            this.análisisGráficoToolStripMenuItem.Name = "análisisGráficoToolStripMenuItem";
+            this.análisisGráficoToolStripMenuItem.Size = new System.Drawing.Size(100, 20);
+            this.análisisGráficoToolStripMenuItem.Text = "Análisis Gráfico";
+            this.análisisGráficoToolStripMenuItem.Click += new System.EventHandler(this.análisisGráficoToolStripMenuItem_Click);
+            // 
+            // CRMformMenuPrincipalCRM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -134,7 +143,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "formMenuPrincipalCRM";
+            this.Name = "CRMformMenuPrincipalCRM";
             this.Text = "formMenuPrincipalCRM";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -156,5 +165,6 @@
         private System.Windows.Forms.ToolStripMenuItem análisisGeográficoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem análisisDeProductosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productosMásVendidosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem análisisGráficoToolStripMenuItem;
     }
 }

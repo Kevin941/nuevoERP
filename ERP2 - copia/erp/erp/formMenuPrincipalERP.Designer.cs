@@ -40,9 +40,10 @@
             this.realizarCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administrarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administrarEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.análisisGráficoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -53,7 +54,8 @@
             this.informesToolStripMenuItem,
             this.operaciónToolStripMenuItem,
             this.clientesToolStripMenuItem,
-            this.empleadosToolStripMenuItem});
+            this.empleadosToolStripMenuItem,
+            this.análisisGráficoToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(750, 24);
@@ -138,17 +140,6 @@
             this.administrarClientesToolStripMenuItem.Text = "Administrar clientes";
             this.administrarClientesToolStripMenuItem.Click += new System.EventHandler(this.administrarClientesToolStripMenuItem_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(750, 449);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // empleadosToolStripMenuItem
             // 
             this.empleadosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -163,6 +154,24 @@
             this.administrarEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.administrarEmpleadosToolStripMenuItem.Text = "Administrar empleados";
             this.administrarEmpleadosToolStripMenuItem.Click += new System.EventHandler(this.administrarEmpleadosToolStripMenuItem_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(750, 449);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // análisisGráficoToolStripMenuItem
+            // 
+            this.análisisGráficoToolStripMenuItem.Name = "análisisGráficoToolStripMenuItem";
+            this.análisisGráficoToolStripMenuItem.Size = new System.Drawing.Size(100, 20);
+            this.análisisGráficoToolStripMenuItem.Text = "Análisis Gráfico";
+            this.análisisGráficoToolStripMenuItem.Click += new System.EventHandler(this.análisisGráficoToolStripMenuItem_Click);
             // 
             // formMenuPrincipalERP
             // 
@@ -197,5 +206,6 @@
         private System.Windows.Forms.ToolStripMenuItem administrarCatálogoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem empleadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administrarEmpleadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem análisisGráficoToolStripMenuItem;
     }
 }

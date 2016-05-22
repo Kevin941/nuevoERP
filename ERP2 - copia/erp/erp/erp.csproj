@@ -163,11 +163,11 @@
     <Compile Include="formVisualizarFacturas.Designer.cs">
       <DependentUpon>formVisualizarFacturas.cs</DependentUpon>
     </Compile>
-    <Compile Include="grafica.cs">
+    <Compile Include="formAnalisisGrafico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="grafica.Designer.cs">
-      <DependentUpon>grafica.cs</DependentUpon>
+    <Compile Include="formAnalisisGrafico.Designer.cs">
+      <DependentUpon>formAnalisisGrafico.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -222,8 +222,8 @@
     <EmbeddedResource Include="formVisualizarFacturas.resx">
       <DependentUpon>formVisualizarFacturas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="grafica.resx">
-      <DependentUpon>grafica.cs</DependentUpon>
+    <EmbeddedResource Include="formAnalisisGrafico.resx">
+      <DependentUpon>formAnalisisGrafico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
